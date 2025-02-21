@@ -22,6 +22,17 @@
 
   gtag('config', 'G-KQ8D3G12GH');
 </script>
+  <script>
+  const counterUrl = "https://api.countapi.xyz/hit/your-unique-namespace/your-page";
+
+  fetch(counterUrl)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("viewCounter").innerText = data.value;
+    })
+    .catch(error => console.error("Error fetching view count:", error));
+</script>
+
 
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
