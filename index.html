@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  const counterUrl = "https://api.countapi.xyz/hit/your-unique-namespace/your-page";
+
+  fetch(counterUrl)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("viewCounter").innerText = data.value;
+    })
+    .catch(error => console.error("Error fetching view count:", error));
+</script>
+
 
 <head>
   <meta charset="utf-8">
