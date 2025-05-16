@@ -76,27 +76,30 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+<section id="hero" class="hero section light-background" style="position: relative; overflow: hidden;">
 
-<!--       <img src="assets/img/horse.jpg" alt=""> -->
-<!--             <video autoplay muted loop src="assets/img/ocean_video.mp4" type=video/mp4"></video>
- -->
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>Murali Mididoddi</h2>
-            <p>I'm <span class="typed" data-typed-items="a Developer, an Analyst , a Data Engineer, an AIML Engineer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="https://github.com/muraliKrishnaMididoddi"><i class="bi bi-github"></i></a>  
-              
-              <a href="https://www.linkedin.com/in/murali-krishna-mididoddi/"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline id="hero-video" style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; object-fit: cover; z-index: -1;">
+    <source src="assets/video/ocean1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Content on top of video -->
+  <div class="container" data-aos="zoom-out">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 text-center">
+        <h2>Murali Mididoddi</h2>
+        <p>I'm <span class="typed" data-typed-items="a Developer, an Analyst , a Data Engineer, an AIML Engineer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <div class="social-links">
+          <a href="https://github.com/muraliKrishnaMididoddi"><i class="bi bi-github"></i></a>  
+          <a href="https://www.linkedin.com/in/murali-krishna-mididoddi/"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
+    </div>
+  </div>
 
-    </section><!-- /Hero Section -->
+</section>
+
 
     <!-- About Section -->
     <section id="about" class="about section">
