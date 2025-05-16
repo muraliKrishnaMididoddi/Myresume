@@ -1465,13 +1465,14 @@ section,
   /* Add your styles here */
 }
 
+/* Background Video Stretched and Fixed */
 .global-video-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -9999;
+  z-index: -100;
   overflow: hidden;
 }
 
