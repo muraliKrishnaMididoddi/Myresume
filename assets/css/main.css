@@ -457,14 +457,24 @@ h6 {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
-section,
+/* section,
 .section {
   color: var(--default-color);
   background-color: rgba(255, 255, 255, 0.8); 
  
   padding: 60px 0;
   overflow: clip;
+} */
+
+section,
+.section {
+  color: var(--default-color);
+  background-color: rgba(255, 255, 255, 0.2); /* Light transparent, adjust as needed */
+  backdrop-filter: blur(4px); /* Optional: blur effect for readability */
+  padding: 60px 0;
+  overflow: clip;
 }
+
 /*  background-color: var(--background-color); */
 /*--------------------------------------------------------------
 # Global Section Titles
@@ -525,12 +535,9 @@ section,
 }
 .video-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent layer */
-  z-index: 0;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Optional: darken the video for better text contrast */
+  z-index: -99;
 }
 
 
