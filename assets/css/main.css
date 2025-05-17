@@ -460,11 +460,12 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.8); 
+ 
   padding: 60px 0;
   overflow: clip;
 }
-
+/*  background-color: var(--background-color); */
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
