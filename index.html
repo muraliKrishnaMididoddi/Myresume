@@ -64,6 +64,10 @@
   </video>
 
   <div class="video-overlay"></div>
+  <button id="toggleMode" style="position: fixed; top: 10px; right: 10px; z-index: 9999;">
+  🌗 Toggle Mode
+</button>
+
 
 
   <header id="header" class="header d-flex flex-column justify-content-center">
@@ -583,7 +587,14 @@ integration across web-based tools and analytics dashboards.</li>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
- 
+<!-- -------------------------------------------------------------new changes--------------------------------------------------------           -->
+ <script>
+  const toggle = document.getElementById("toggleMode");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
+
 </body>
 
 </html>
