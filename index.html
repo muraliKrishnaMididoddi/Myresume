@@ -57,20 +57,17 @@
 
 <video id="bg-video" autoplay muted playsinline></video>
 
-<script>
-  const videoElement = document.getElementById('bg-video');
-  const videos = ['ocean_hd.mp4', 'ocean_4.mp4', 'ocean1.mp4']; // Add your videos
-  let index = 0;
+<body>
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="assets/img/ocean_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  function playNextVideo() {
-    videoElement.src = `assets/img/${videos[index]}`;
-    videoElement.play();
-    index = (index + 1) % videos.length;
-  }
+  <div class="video-overlay"></div>
 
-  videoElement.addEventListener('ended', playNextVideo);
-  playNextVideo();
-</script>
+  <!-- your header, main, and sections -->
+</body>
+
 
 
   <div class="video-overlay"></div>
