@@ -55,13 +55,23 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<video id="bg-video" autoplay muted playsinline></video>
 
-  <!-- Fullscreen Background Video -->
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="assets/img/ocean_hd.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<script>
+  const videoElement = document.getElementById('bg-video');
+  const videos = ['ocean_hd.mp4', 'corn_golden_hour.mp4', 'ocean1.mp4']; // Add your videos
+  let index = 0;
+
+  function playNextVideo() {
+    videoElement.src = `assets/img/${videos[index]}`;
+    videoElement.play();
+    index = (index + 1) % videos.length;
+  }
+
+  videoElement.addEventListener('ended', playNextVideo);
+  playNextVideo();
+</script>
+
 
   <div class="video-overlay"></div>
 
