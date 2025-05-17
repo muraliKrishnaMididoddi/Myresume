@@ -1563,5 +1563,34 @@ section,
 .navmenu span {
   color: #ffffff !important;
 }
+/*-----------------------------------------------------------------------new changes---------------------------------------------------------  */
+/* About Section */
+#about {
+  background-color: rgba(255, 255, 255, 0.1); /* light glass effect */
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+/* Skills Section */
+#skills {
+  background-color: rgba(0, 0, 0, 0.3); /* slightly darker */
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+/* Resume Section */
+#resume {
+  background-color: rgba(0, 0, 0, 0.4); /* darker for dense text */
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+/* Contact Section */
+#contact {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  padding: 60px 0;
+}
+
 
 
