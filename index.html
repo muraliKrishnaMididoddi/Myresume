@@ -59,7 +59,7 @@
 
 <script>
   const videoElement = document.getElementById('bg-video');
-  const videos = ['ocean_hd.mp4', 'corn_golden_hour.mp4', 'ocean1.mp4']; // Add your videos
+  const videos = ['ocean_hd.mp4', 'ocean_4.mp4', 'ocean1.mp4']; // Add your videos
   let index = 0;
 
   function playNextVideo() {
@@ -118,20 +118,9 @@
   </div>
 
 </section>
-<div id="news-feed"></div>
 
-<script>
-  fetch('https://api.rss2json.com/v1/api.json?rss_url=https://techcrunch.com/feed/')
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById('news-feed');
-      data.items.slice(0, 5).forEach(item => {
-        const div = document.createElement('div');
-        div.innerHTML = `<h4><a href="${item.link}" target="_blank">${item.title}</a></h4>`;
-        container.appendChild(div);
-      });
-    });
-</script>
+
+
 
 
 
