@@ -517,11 +517,20 @@ section,
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   object-fit: cover;
   z-index: -1;
-  pointer-events: none; /* So clicks go through the video */
+  pointer-events: none; /* allows clicking on content above */
+}
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent layer */
+  z-index: 0;
 }
 
 
