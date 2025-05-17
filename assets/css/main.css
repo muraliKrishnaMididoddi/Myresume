@@ -1511,4 +1511,57 @@ hero {
   background: rgba(0, 0, 0, 0.4); /* adjust transparency */
   z-index: -99;
 }
+/* Transparent sections and containers over video */
+section,
+.section,
+.container,
+.content,
+.resume .resume-item,
+.about .content,
+.skills .progress-bar-wrap,
+.contact .info-item,
+.services .service-item,
+.portfolio .portfolio-item,
+.testimonials .testimonial-item,
+.page-title {
+  background-color: rgba(0, 0, 0, 0.25) !important; /* semi-transparent black */
+  color: #ffffff !important; /* ensure text is white */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Make cards look clean and text readable */
+.resume .resume-item::before {
+  background-color: transparent !important;
+}
+
+/* Specific tweaks for text */
+.resume p,
+.resume h4,
+.resume h5,
+.skills .progress .skill,
+.section-title h2,
+.about p,
+.about h2,
+.services h3,
+.services p,
+.contact h3,
+.contact p {
+  color: #ffffff !important;
+}
+
+/* Remove any background from progress bars */
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Optional: make nav links white too */
+.navmenu a,
+.navmenu i,
+.navmenu span {
+  color: #ffffff !important;
+}
+
 
