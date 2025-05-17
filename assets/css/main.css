@@ -469,7 +469,8 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: rgba(255, 255, 255, 0.2); /* Light transparent, adjust as needed */
+  background-color: rgba(255, 255, 255, 0.85); /* much brighter */
+ 
   backdrop-filter: blur(4px); /* Optional: blur effect for readability */
   padding: 60px 0;
   overflow: clip;
