@@ -533,7 +533,7 @@ section, .section {
   z-index: -1;
   pointer-events: none; /* allows clicking on content above */
 } */
-@media (max-width: 768px) {
+@media () {
 position: fixed;
   top: 0;
   left: 0;
