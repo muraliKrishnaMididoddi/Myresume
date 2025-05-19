@@ -1511,6 +1511,26 @@ hero {
   background: rgba(0, 0, 0, 0.4); /* adjust transparency */
   z-index: -99;
 }
+/* section,
+.section,
+.container,
+.content,
+.resume .resume-item,
+.about .content,
+.skills .progress-bar-wrap,
+.contact .info-item,
+.services .service-item,
+.portfolio .portfolio-item,
+.testimonials .testimonial-item,
+.page-title {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: none !important;
+  border: none !important;
+}
+ */
 /* Transparent sections and containers over video */
 section,
 .section,
@@ -1524,13 +1544,14 @@ section,
 .portfolio .portfolio-item,
 .testimonials .testimonial-item,
 .page-title {
-  background-color: rgba(0, 0, 0, 0.25) !important; /* semi-transparent black */
-  color: #ffffff !important; /* ensure text is white */
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background-color: transparent !important;
+  color: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
   border: none !important;
 }
+
 
 /* Make cards look clean and text readable */
 .resume .resume-item::before {
@@ -1609,6 +1630,19 @@ section,
   color: #1e90ff;
 }
 
+#about,
+#skills,
+#resume,
+#contact {
+  background-color: transparent !important;
+  color: #ffffff;
+  padding: 60px 0;
+}
+* {
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
 
 
 
