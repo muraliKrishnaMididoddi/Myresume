@@ -465,7 +465,7 @@ h6 {
   padding: 60px 0;
   overflow: clip;
 } */
-section, .section {
+/* section, .section {
   background: transparent !important;
   color: #ffffff;
   backdrop-filter: none !important;
@@ -473,7 +473,7 @@ section, .section {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
-
+ */
 
 
 /*  background-color: var(--background-color); */
