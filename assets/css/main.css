@@ -523,7 +523,7 @@ section, .section {
   margin-bottom: 0;
 }
 
-.bg-video {
+/* .bg-video {
   position: fixed;
   top: 0;
   left: 0;
@@ -532,7 +532,15 @@ section, .section {
   object-fit: cover;
   z-index: -1;
   pointer-events: none; /* allows clicking on content above */
+} */
+@media (max-width: 768px) {
+  .bg-video {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+  }
 }
+
 .video-overlay {
   position: fixed;
   inset: 0;
